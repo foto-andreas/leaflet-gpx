@@ -231,7 +231,7 @@ L.GPX = L.FeatureGroup.extend({
   reload: function() {
     this._init_info();
     this.clearLayers();
-    this._parse(this._gpx, this.options, this.options.async);
+    this._parse(this._gpx.trim(), this.options, this.options.async);
   },
 
   // Private methods
