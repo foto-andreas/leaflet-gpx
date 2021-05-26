@@ -94,7 +94,7 @@ L.GPX = L.FeatureGroup.extend({
     this._init_info();
 
     if (gpx) {
-      this._parse(gpx, options, this.options.async);
+      this._parse(gpx.trim(), options, this.options.async);
     }
   },
 
